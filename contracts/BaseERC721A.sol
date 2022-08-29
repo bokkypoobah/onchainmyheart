@@ -1653,7 +1653,7 @@ abstract contract ERC721ABurnable is ERC721A, IERC721ABurnable {
 
 
 
-contract Test is ERC721AQueryable, ERC721ABurnable {
+contract BaseERC721A is ERC721AQueryable, ERC721ABurnable {
     constructor(string memory name_, string memory symbol_) ERC721A(name_, symbol_) {}
 
     function safeMint(address to, uint256 quantity) public {
